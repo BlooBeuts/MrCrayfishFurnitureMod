@@ -39,7 +39,7 @@ public class FurnitureCrafting
 		GameRegistry.addRecipe(new ItemStack(FurnitureItems.itemCoolPack, 2), new Object[] { "***", "*@*", "***", '*', "blockGlass", '@', Items.water_bucket });
 		GameRegistry.addRecipe(new ItemStack(FurnitureItems.itemCoffeeTableWood, 1), new Object[] { "***", "* *", '*', "plankWood" });
 		GameRegistry.addRecipe(new ItemStack(FurnitureItems.itemCoffeeTableStone, 1), new Object[] { "***", "* *", '*', "cobblestone" });
-		GameRegistry.addRecipe(new ItemStack(FurnitureItems.itemLamp, 2), new Object[] { "***", "*@*", " & ", '*', "blockCloth", '@', "glowstone", '&', Blocks.obsidian });
+		GameRegistry.addRecipe(new ItemStack(FurnitureItems.itemLamp, 2), new Object[] { "***", "*@*", " & ", '*', Blocks.wool, '@', "glowstone", '&', Blocks.obsidian });
 		GameRegistry.addRecipe(new ItemStack(FurnitureItems.itemBedsideCabinet, 1), new Object[] { "***", "*@*", "*@*", '*', "plankWood", '@', "chestWood" });
 		GameRegistry.addRecipe(new ItemStack(FurnitureItems.itemOven, 1), new Object[] { "***", "*@*", "***", '*', "blockIron", '@', Blocks.furnace });
 		GameRegistry.addRecipe(new ItemStack(FurnitureItems.itemOvenRangehood, 1), new Object[] { " * ", " * ", "*@*", '*', "ingotIron", '@', "glowstone" });
@@ -51,12 +51,12 @@ public class FurnitureCrafting
 		GameRegistry.addRecipe(new ItemStack(FurnitureItems.itemStonePath, 8), new Object[] { "**", '*', "cobblestone" });
 		GameRegistry.addRecipe(new ItemStack(FurnitureItems.itemTap, 1), new Object[] { " @ ", "***", "  *", '*', "stone", '@', "ingotIron" });
 		GameRegistry.addRecipe(new ItemStack(FurnitureItems.itemMailBox, 1), new Object[] { "*@*", "***", " * ", '*', "plankWood", '@', Items.book });
-		GameRegistry.addRecipe(new ItemStack(FurnitureItems.itemEnvelope, 1), new Object[] { "**", '*', "paper" });
-		GameRegistry.addRecipe(new ItemStack(FurnitureItems.itemPackage, 1), new Object[] { "***", "***", '*', "paper" });
+		GameRegistry.addRecipe(new ItemStack(FurnitureItems.itemEnvelope, 1), new Object[] { "**", '*', Items.paper });
+		GameRegistry.addRecipe(new ItemStack(FurnitureItems.itemPackage, 1), new Object[] { "***", "***", '*', Items.paper });
 		GameRegistry.addShapelessRecipe(new ItemStack(FurnitureItems.itemDoorBell, 1), Blocks.noteblock, Blocks.stone_button);
 		GameRegistry.addShapelessRecipe(new ItemStack(FurnitureItems.itemWhiteFence, 2), Blocks.oak_fence, "dyeWhite");
 		GameRegistry.addRecipe(new ItemStack(FurnitureItems.itemComputer, 1), new Object[] { "***", "*@*", "*&*", '*', "blockIron", '@', "paneGlass", '&', "dustRedstone" });
-		GameRegistry.addRecipe(new ItemStack(FurnitureItems.itemPrinter, 1), new Object[] { "*@*", "&R&", "***", '*', "stone", '@', "paper", '&', "blockIron", 'R', "dustRedstone" });
+		GameRegistry.addRecipe(new ItemStack(FurnitureItems.itemPrinter, 1), new Object[] { "*@*", "&R&", "***", '*', "stone", '@', Items.paper, '&', "blockIron", 'R', "dustRedstone" });
 		GameRegistry.addRecipe(new ItemStack(FurnitureItems.itemElectricFence, 8), new Object[] { "***", "*@*", "*#*", '*', "ingotIron", '@', FurnitureItems.itemWhiteFence, '#', Blocks.redstone_torch });
 		GameRegistry.addRecipe(new ItemStack(FurnitureItems.itemFireAlarm, 1), new Object[] { "*#*", "*@*", '*', "ingotIron", '@', Blocks.noteblock, '#', "dustRedstone" });
 		GameRegistry.addRecipe(new ItemStack(FurnitureItems.itemTV, 1), new Object[] { "***", "*@*", "*&*", '*', "logWood", '@', "paneGlass", '&', "dustRedstone" });
